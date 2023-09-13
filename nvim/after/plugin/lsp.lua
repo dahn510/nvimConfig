@@ -21,5 +21,11 @@ lsp.ensure_installed({
     'marksman',
 })
 
+lsp.set_sign_icons({
+    error = '💩',
+    warn = '🤡',
+    hint = '🗿',
+    info = '🧠',
+})
 
 lsp.setup()
