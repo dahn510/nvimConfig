@@ -28,4 +28,3 @@ vim.opt.colorcolumn = "90"
 
 vim.opt.signcolumn = "yes"
 
-vim.g.mapleader = " "

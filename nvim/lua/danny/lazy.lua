@@ -17,6 +17,14 @@ require('lazy').setup({
 	{'nvim-treesitter/nvim-treesitter-context'},
     {'nvim-treesitter/playground'},
 	{'eandrju/cellular-automaton.nvim'},
+    {'vim-airline/vim-airline'},
+    {'vim-airline/vim-airline-themes'},
+    {
+        "iamcco/markdown-preview.nvim",
+        config = function()
+            vim.fn["mkdp#util#install"]()
+        end,
+    },
 	{
 		'sainnhe/everforest',
 		lazy = false, -- make sure we load this during startup if it is your main colorscheme
