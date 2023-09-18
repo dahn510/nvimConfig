@@ -21,6 +21,12 @@ lsp.ensure_installed({
     'marksman',
 })
 
+vim.diagnostic.config({
+    virtual_text = {
+        prefix = '🗿'
+    }
+})
+
 lsp.set_sign_icons({
     error = '💩',
     warn = '🤡',
@@ -29,3 +35,8 @@ lsp.set_sign_icons({
 })
 
 lsp.setup()
+
+local trouble = require('trouble')
+vim.keymap.set("n", "<leader>d", function ()
+    trouble.open()
+end)
